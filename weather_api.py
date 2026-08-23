@@ -13,9 +13,10 @@ class WeatherAPI:
         response = requests.get(url)
         try:
             response.raise_for_status()
-        except requests.exceptions.RequestException:
-                print("Something went wrong with the request.")
-                return
+        except requests.exceptions.RequestException as error:
+            print(error)
+            print("Could not fetch weather data.")
+            return
         weather = response.json()
         return weather
 
