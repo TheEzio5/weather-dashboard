@@ -9,6 +9,8 @@ if weather:
     print(f'City name: {weather["name"]}')
     print(f'{weather["main"]["temp"]} °C')
     print(f'Feels like: {weather["main"]["feels_like"]} °C')
+    print(f'Min temperature: {weather["main"]["temp_min"]} °C')
+    print(f'Max temperature: {weather["main"]["temp_max"]} °C')
     print(f'Humidity: {weather["main"]["humidity"]}%')
     print(f'Wind speed: {weather["wind"]["speed"]} m/s')
     print(f'Description: {weather["weather"][0]["description"]}')
