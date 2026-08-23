@@ -8,7 +8,10 @@ weather = api.get_weather(city)
 if weather:
     print(f'City name: {weather["name"]}')
     print(f'{weather["main"]["temp"]} °C')
+    print(f'Feels like: {weather["main"]["feels_like"]} °C')
     print(f'Description: {weather["weather"][0]["description"]}')
+
+
 
 
 # print(api.api_key)
