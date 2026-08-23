@@ -10,6 +10,7 @@ if weather:
     print(f'{weather["main"]["temp"]} °C')
     print(f'Feels like: {weather["main"]["feels_like"]} °C')
     print(f'Humidity: {weather["main"]["humidity"]}%')
+    print(f'Wind speed: {weather["wind"]["speed"]} m/s')
     print(f'Description: {weather["weather"][0]["description"]}')
 
 
